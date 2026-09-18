@@ -35,6 +35,7 @@
 
 import { Routes, Route } from "react-router-dom";
 import Dashboard from "./components/pages/Dashboard";
+import Auth from "./components/pages/Auth";
 import { Toaster } from "react-hot-toast";
 
 function App() {
@@ -51,24 +52,19 @@ function App() {
             borderRadius: "14px",
             padding: "14px 18px",
           },
-          success: {
-            iconTheme: {
-              primary: "#d4af37",
-              secondary: "#111",
-            },
-          },
-          error: {
-            iconTheme: {
-              primary: "#ef4444",
-              secondary: "#111",
-            },
-          },
         }}
       />
 
       <Routes>
+        {/* Direct access */}
         <Route path="/" element={<Dashboard />} />
         <Route path="/dashboard" element={<Dashboard />} />
+
+        {/* Login */}
+        <Route path="/login" element={<Auth />} />
+
+        {/* Signup */}
+        <Route path="/signup" element={<Auth />} />
       </Routes>
     </>
   );
