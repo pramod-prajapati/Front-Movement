@@ -155,9 +155,7 @@ function Booking() {
             // API URL
             // ========================================
 
-            const API_URL =
-                import.meta.env.VITE_API_URL ||
-                "http://localhost:5000/api";
+            const API_URL ="https://back-moment.onrender.com/api";
 
 
             // ========================================
@@ -432,10 +430,9 @@ function Booking() {
                                         outline-none
                                         placeholder:text-white/25
                                         transition-colors
-                                        ${
-                                            errors.name
-                                                ? "border-red-500/60"
-                                                : "border-white/10 focus:border-[#d4af37]/50"
+                                        ${errors.name
+                                            ? "border-red-500/60"
+                                            : "border-white/10 focus:border-[#d4af37]/50"
                                         }
                                     `}
                                 />
@@ -500,10 +497,9 @@ function Booking() {
                                         outline-none
                                         placeholder:text-white/25
                                         transition-colors
-                                        ${
-                                            errors.email
-                                                ? "border-red-500/60"
-                                                : "border-white/10 focus:border-[#d4af37]/50"
+                                        ${errors.email
+                                            ? "border-red-500/60"
+                                            : "border-white/10 focus:border-[#d4af37]/50"
                                         }
                                     `}
                                 />
@@ -569,10 +565,9 @@ function Booking() {
                                         outline-none
                                         placeholder:text-white/25
                                         transition-colors
-                                        ${
-                                            errors.phone
-                                                ? "border-red-500/60"
-                                                : "border-white/10 focus:border-[#d4af37]/50"
+                                        ${errors.phone
+                                            ? "border-red-500/60"
+                                            : "border-white/10 focus:border-[#d4af37]/50"
                                         }
                                     `}
                                 />
@@ -633,15 +628,13 @@ function Booking() {
                                         text-sm
                                         outline-none
                                         transition-colors
-                                        ${
-                                            formData.service
-                                                ? "text-white"
-                                                : "text-white/25"
+                                        ${formData.service
+                                            ? "text-white"
+                                            : "text-white/25"
                                         }
-                                        ${
-                                            errors.service
-                                                ? "border-red-500/60"
-                                                : "border-white/10 focus:border-[#d4af37]/50"
+                                        ${errors.service
+                                            ? "border-red-500/60"
+                                            : "border-white/10 focus:border-[#d4af37]/50"
                                         }
                                     `}
                                 >
@@ -733,10 +726,9 @@ function Booking() {
                                         text-white
                                         outline-none
                                         transition-colors
-                                        ${
-                                            errors.date
-                                                ? "border-red-500/60"
-                                                : "border-white/10 focus:border-[#d4af37]/50"
+                                        ${errors.date
+                                            ? "border-red-500/60"
+                                            : "border-white/10 focus:border-[#d4af37]/50"
                                         }
                                     `}
                                 />
@@ -800,10 +792,9 @@ function Booking() {
                                         outline-none
                                         placeholder:text-white/25
                                         transition-colors
-                                        ${
-                                            errors.message
-                                                ? "border-red-500/60"
-                                                : "border-white/10 focus:border-[#d4af37]/50"
+                                        ${errors.message
+                                            ? "border-red-500/60"
+                                            : "border-white/10 focus:border-[#d4af37]/50"
                                         }
                                     `}
                                 />
