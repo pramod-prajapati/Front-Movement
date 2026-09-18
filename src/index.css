@@ -1,0 +1,122 @@
+@import "tailwindcss";
+
+html{
+    scroll-behavior: smooth;
+}
+
+button:focus {
+    outline: none;
+}
+
+button{
+    cursor: pointer;
+}
+
+@keyframes logoReveal {
+    0% {
+        opacity: 0;
+        transform: scale(0.88);
+        filter: blur(8px);
+    }
+
+    60% {
+        opacity: 1;
+        filter: blur(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+        filter: blur(0);
+    }
+}
+
+
+@keyframes contentReveal {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes scan {
+    0% {
+        left: -80px;
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0.8;
+    }
+
+    80% {
+        opacity: 0.8;
+    }
+
+    100% {
+        left: 100%;
+        opacity: 0;
+    }
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+.auth-card {
+    isolation: isolate;
+}
+
+.corner-glow {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    pointer-events: none;
+    z-index: 5;
+    opacity: 0.8;
+    filter: blur(18px);
+    background: #d4af37;
+}
+
+.corner-top-left {
+    top: -65px;
+    left: -65px;
+}
+
+.corner-top-right {
+    top: -65px;
+    right: -65px;
+}
+
+.corner-bottom-left {
+    bottom: -65px;
+    left: -65px;
+}
+
+.corner-bottom-right {
+    bottom: -65px;
+    right: -65px;
+}
+
+::selection {
+    background: rgba(212, 175, 55, 0.85);
+    color: #000;
+}
+
+::-moz-selection {
+    background: rgba(212, 175, 55, 0.85);
+    color: #000;
+}

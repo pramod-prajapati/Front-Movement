@@ -1,0 +1,22 @@
+/* .Header{
+    max-width: 80%;
+    margin: auto;
+    border-radius: 15px;
+    margin-top: 20px;
+    backdrop-filter: blur(10px);
+    webkit-backdrop-filter: blur(10px);
+    background-color: rgba(8, 11, 28, 0.795);
+}
+ */
+
+ @media (width < 620px) {
+    .big{
+        font-size:50px;
+
+
+    }
+    .shiv{
+        font-size: 13px;
+    }
+    
+ }
