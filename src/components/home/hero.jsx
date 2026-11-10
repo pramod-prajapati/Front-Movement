@@ -30,7 +30,7 @@ function Hero() {
             {/* Background */}
             <div className="absolute inset-0 z-0 bg-fixed">
                 <img
-                    src="https://cdn.postimage.me/2026/08/28/Image.png"
+                    src="/Merry.png"
                     alt=""
                     className="h-full w-full object-cover object-center " 
                      
